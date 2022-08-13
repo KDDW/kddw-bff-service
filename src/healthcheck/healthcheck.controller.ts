@@ -1,7 +1,7 @@
 import { Controller, Get, HttpCode, HttpStatus } from '@nestjs/common';
 
 @Controller()
-export class AppController {
+export class HealthCheckController {
   @Get('/healthcheck')
   @HttpCode(HttpStatus.OK)
   healthCheck(): string {
